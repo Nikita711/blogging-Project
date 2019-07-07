@@ -73,6 +73,7 @@
         float: right;
         font-size: 30px;
         font-weight: bold;
+        padding: 10px;
     }
     
     .close:hover,
@@ -163,4 +164,15 @@
     label {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-weight: 800;
+    }
+    
+    form a {
+        float: inherit;
+        color: blue;
+    }
+    
+    .member {
+        font-weight: bold;
+        margin: 95px;
+        font-size: 16px;
     }
