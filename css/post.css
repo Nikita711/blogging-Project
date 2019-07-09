@@ -2,6 +2,7 @@
     font-size: 150%;
     font-family: 'Abel', sans-serif;
     font-weight: bold;
+    text-align: center;
 }
 
 .blogText {
@@ -18,3 +19,20 @@
 
 
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+
+#edit-btn {
+    background-color: red;
+    float: right;
+    padding: 10px;
+    margin-right: 8px;
+    color: white;
+    border: 0px;
+}
+
+#like-btn,
+#comment-btn {
+    background: red;
+    color: white;
+    padding: 10px;
+    border: 0px;
+}

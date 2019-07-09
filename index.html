@@ -10,15 +10,9 @@
     <link href='css\index.css' rel='stylesheet' type='text/css'>
 
     <!-- Place all CSS for fonts in this file -->
-    <!-- <link href='css\font.css' rel='stylesheet' type='text/css'> -->
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
 
-    <!-- <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet"> -->
-    <!--<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">-->
-
-    <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
-
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -27,76 +21,65 @@
         <div class="header">
 
             <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
-            <button id="fonts">Sign Up</button>
-            <button id="subfont">Sign In</button>
-
-            <p class="heading">ScriBBler</p>
-            <p class="heading-sub">Explore, Imagine, Create</p>
+            <div class="text">
+                <h2><span>S</span>cri<span>BB</span>ler</h2>
+                <p>Explore,Imagine,Create</p>
+            </div>
+            <div class="btn">
+                <input type="button" value="Sign Up" class="button" onclick="document.getElementById('container1').style.display='block'" style="width:auto;">
+                <input type="button" value="Sign In" class="button" onclick="document.getElementById('container2').style.display='block'" style="width:auto;">
+            </div>
 
         </div>
 
         <div class="postButtons">
 
             <!-- Insert code for All Posts & Create Post button here -->
-            <button>All Posts</button>
-            <button>Create Post</button>
+
+            <input type="button" value="All Post">
+            <input type="button" value="Create Post">
 
         </div>
     </div>
 
-    <!--sign up modal-->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">&times;</span>
-                <h2>Get Started</h2>
-                <hr>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <label>Full Name<br></label>
-                    <input type="text" name="Full Name" placeholder="Enter Full Name " required><br>
-                    <label>UserName</label><br>
-                    <input type="email" name="UserName" placeholder="Enter UserName " required><br>
-                    <label>Password</label><br>
-                    <input type="password" name="password" placeholder="Enter Password " required><br>
-                    <label>Confirm Password</label><br>
-                    <input type="password" name="password" placeholder="Confirm Password " required><br>
-                    <br><button class="sign-button">Sign Up</button>
-                </form>
-            </div>
+    <div>
+        <!-- Insert code for Sign In modal here -->
+        <div id="container1">
+            <p class="p">GET STARTED!</p>
+            <span id="cross" onclick="document.getElementById('container1').style.display='none'" style="width:auto;"><i class="fas fa-times"></i></span>
+            <form action="">
+                <label>FULL NAME</label><br>
+                <input type="text" name="" required placeholder="Enter Full Name"><br>
+                <label>USERNAME</label><br>
+                <input type="email" name="" required placeholder="Enter Email"><br>
+                <label>PASSWORD</label><br>
+                <input type="password" name="" required placeholder="Enter PASSWORD"><br>
+                <label>CONFIRM PASSWORD</label><br>
+                <input type="password" name="" required placeholder="CONFIRM PASSWORD"><br>
+                <button>Sign Up</button>
+            </form>
         </div>
+
+
     </div>
 
+    <div>
+        <!-- Insert code for Sign Up modal here -->
+        <div id="container2">
+            <p class="p">WELCOME BACK!</p>
+            <span id="cross1" onclick="document.getElementById('container2').style.display='none'" style="width:auto;"><i class="fas fa-times"></i></span>
+            <form action="">
 
+                <label>USERNAME</label><br>
+                <input type="email" name="" required placeholder="Enter Email"><br>
+                <label>PASSWORD</label><br>
+                <input type="password" name="" required placeholder="Enter PASSWORD"><br>
 
-
-
-    <!-- Insert code for Sign in modal here -->
-    <div id="myModal1" class="modal1">
-        <div class="modal-content1">
-            <div class="modal-header1">
-                <span class="close1">&times;</span>
-                <h2>Welcome Back!</h2>
-                <hr>
-            </div>
-            <div class="modal-body1">
-                <form>
-                    <label>UserName</label><br>
-                    <input type="email" name="UserName" placeholder="Enter UserName " required><br>
-                    <label>Password</label><br>
-                    <input type="password" name="password" placeholder="Enter Password " required><br>
-                    <br><button class="sign-button">Sign In</button><br><br>
-                    <span class="member">Not a member ? <a href="#">sign Up</a></span>
-                </form>
-            </div>
+                <button>Sign In</button>
+            </form>
         </div>
+
     </div>
-
-
-
-
-
 
     <div>
 

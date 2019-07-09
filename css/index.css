@@ -1,178 +1,88 @@
-    body {
-        background: url('background.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center center;
-        background-size: cover;
-        margin: 0 !important;
-        background-size: 100% cover!important;
-        overflow: hidden;
-        display: block;
-    }
-    
-    .postButtons button {
-        background-color: gold;
-        font-weight: bold;
-        padding: 7px;
-        margin: 0px;
-    }
-    
-    .postButtons {
-        text-align: center;
-        margin: 250px;
-    }
-    /* The Modal (background) */
-    
-    .modal,
-    .modal1 {
-        display: block;
-        /* Hidden by default */
-        position: fixed;
-        /* Stay in place */
-        z-index: 1;
-        /* Sit on top */
-        left: 0;
-        top: 0;
-        width: 100%;
-        /* Full width */
-        height: 100%;
-        /* Full height */
-        overflow: auto;
-        /* Enable scroll if needed */
-        background-color: rgb(0, 0, 0);
-        /* Fallback color */
-        background-color: rgba(0, 0, 0, 0.4);
-        /* Black w/ opacity */
-        -webkit-animation-name: fadeIn;
-        /* Fade in the background */
-        -webkit-animation-duration: 0.4s;
-        animation-name: fadeIn;
-        animation-duration: 0.4s
-    }
-    /* Modal Content */
-    
-    .modal-content,
-    .modal-content1 {
-        position: fixed;
-        bottom: 0;
-        background-color: #fefefe;
-        width: 30%;
-        height: 55%;
-        -webkit-animation-name: slideIn;
-        -webkit-animation-duration: 0.4s;
-        animation-name: slideIn;
-        animation-duration: 0.4s;
-        margin-left: 500px;
-        margin-bottom: 300px;
-    }
-    /* The Close Button */
-    
-    .close,
-    .close1 {
-        color: white;
-        float: right;
-        font-size: 30px;
-        font-weight: bold;
-        padding: 10px;
-    }
-    
-    .close:hover,
-    .close:focus,
-    .close1:hover,
-    .close1:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    
-    .modal-body,
-    .modal-body1 {
-        padding: 12px 16px;
-        line-height: 25px;
-    }
-    /* Add Animation */
-    
-    @-webkit-keyframes slideIn {
-        from {
-            bottom: -300px;
-            opacity: 0
-        }
-        to {
-            bottom: 0;
-            opacity: 1
-        }
-    }
-    
-    @keyframes slideIn {
-        from {
-            bottom: -300px;
-            opacity: 0
-        }
-        to {
-            bottom: 0;
-            opacity: 1
-        }
-    }
-    
-    @-webkit-keyframes fadeIn {
-        from {
-            opacity: 0
-        }
-        to {
-            opacity: 1
-        }
-    }
-    
-    @keyframes fadeIn {
-        from {
-            opacity: 0
-        }
-        to {
-            opacity: 1
-        }
-    }
-    
-    form {
-        display: block;
-        width: 100%;
-    }
-    
-    hr {
-        width: 90%;
-    }
-    
-    h2 {
-        text-align: center;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-weight: 600;
-    }
-    
-    .sign-button {
-        background-color: #009900;
-        width: 100%;
-        color: white;
-        padding: 5px;
-    }
-    
-    input {
-        width: 95%;
-        background-color: whitesmoke;
-        padding: 5px;
-        margin: 2px;
-    }
-    
-    label {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-weight: 800;
-    }
-    
-    form a {
-        float: inherit;
-        color: blue;
-    }
-    
-    .member {
-        font-weight: bold;
-        margin: 95px;
-        font-size: 16px;
-    }
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+body {
+    background: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 !important;
+    background-size: 100% cover!important;
+    overflow: hidden;
+    display: block;
+}
+
+
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
+
+#container1,
+#container2 {
+    display: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* margin: -80px auto; */
+    width: 33%;
+    background-color: white;
+    padding: 12px;
+    text-align: start;
+    z-index: 1;
+    position: fixed;
+    top: 110px;
+    left: 32%;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+button {
+    border: none;
+    width: 95%;
+    height: 35px;
+    padding-left: 15px;
+    font-family: inherit;
+    color: black;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-bottom: 18px;
+}
+
+button {
+    background-color: rgba(0, 128, 0, 0.6);
+    color: white;
+    width: 98.5%;
+    height: 40px;
+    font-family: inherit;
+    font-size: 25px;
+}
+
+.p {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid gray;
+}
+
+#cross,
+#cross1 {
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    left: 90%;
+    cursor: pointer;
+}
+
+#cross:hover {
+    color: red;
+}
+
+#cross1:hover {
+    color: red;
+}
+
+#container2 {
+    z-index: 2;
+}
