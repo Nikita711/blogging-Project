@@ -1,0 +1,266 @@
+    .post {
+    position: relative;
+    height: 20%;
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(17, 4, 63, 0.2), 0 4px 20px 0 rgba(79, 19, 97, 0.19);
+    margin: -20px 81px 69px 96px;
+    float: left;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 720px) {
+    .post {
+        margin: 0px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+}
+
+.post-left {
+    width: 15%;
+    max-width: 15%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+}
+
+@media only screen and (max-width: 720px) {
+    .post-left {
+        width: 10%;
+        max-width: 10%;
+        padding: 5px;
+    }
+}
+
+.post-content {
+    width: 75%;
+    display: table-cell;
+    text-align: left;
+    background-color: #E8E8E8;
+    color: #000000;
+    border-radius: 0 15px 15px 0;
+    padding: 0 20px;
+}
+
+@media only screen and (max-width: 720px) {
+    .post-content {
+        padding: 0 5px;
+    }
+}
+
+.post-title {
+    font-family: 'Itim', cursive;
+    font-weight: bold;
+    color: #2b312b;
+    font-size: 25px;
+    height: 25px;
+}
+
+@media only screen and (max-width: 720px) {
+    .post-title {
+        font-size: 20px;
+        height: 10px;
+    }
+}
+
+.post-more {
+    float: right;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.post-desc {
+    height: 100px;
+    margin-bottom: 0 !important;
+}
+
+@media only screen and (max-width: 720px) {
+    .post-desc {
+        height: 25px;
+    }
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0 !important;
+    color: #fff;
+    background-color: orange;
+    background-size: 2000% 2000%;
+}
+
+.allPostsContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.one,
+.two,
+.three {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.three {
+    margin-left: 25%;
+    width: 50%;
+}
+
+.no {
+    visibility: hidden;
+}
+
+i {
+    font-size: 20px;
+    margin-left: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#remove {
+    display: none;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    position: fixed;
+    z-index: 100;
+    width: 30%;
+    height: 25%;
+    background-color: whitesmoke;
+    top: 45%;
+    left: 38%;
+}
+
+#remove p {
+    color: black;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.yes,
+.nope {
+    text-align: center;
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    outline: none;
+    cursor: pointer;
+}
+
+.yes {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+.nope {
+    background-color: green;
+}
+
+@media only screen and (max-width: 720px) {
+    .res {
+        visibility: hidden;
+    }
+}
+
+
+/* OTHER */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+/* body{
+   background: url('background.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   margin: 0 !important;
+   background-size: 100% cover!important;
+   overflow:hidden;
+   display: block;
+}  */
+
+
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
+
+#container1,
+#container2 {
+    display: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* margin: -80px auto; */
+    width: 33%;
+    background-color: white;
+    padding: 12px;
+    text-align: start;
+    z-index: 1;
+    position: fixed;
+    top: 110px;
+    left: 32%;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+button {
+    border: none;
+    width: 95%;
+    height: 35px;
+    padding-left: 15px;
+    font-family: inherit;
+    color: black;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-bottom: 18px;
+}
+
+button {
+    background-color: rgba(0, 128, 0, 0.6);
+    color: white;
+    width: 98.5%;
+    height: 40px;
+    font-family: inherit;
+    font-size: 25px;
+}
+
+.p {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid gray;
+    color: black;
+}
+
+#cross,
+#cross1 {
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    left: 20%;
+    cursor: pointer;
+    color: black;
+}
+
+#cross:hover {
+    color: red;
+}
+
+#cross1:hover {
+    color: red;
+}
+
+#container2 {
+    z-index: 2;

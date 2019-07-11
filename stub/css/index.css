@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+body {
+    background: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 !important;
+    background-size: 100% cover!important;
+    overflow: hidden;
+    display: block;
+}
+
+
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
+
+#container1,
+#container2 {
+    display: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* margin: -80px auto; */
+    width: 33%;
+    background-color: white;
+    padding: 12px;
+    text-align: start;
+    z-index: 1;
+    position: fixed;
+    top: 110px;
+    left: 32%;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+button {
+    border: none;
+    width: 95%;
+    height: 35px;
+    padding-left: 15px;
+    font-family: inherit;
+    color: black;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-bottom: 18px;
+}
+
+button {
+    background-color: rgba(0, 128, 0, 0.6);
+    color: white;
+    width: 98.5%;
+    height: 40px;
+    font-family: inherit;
+    font-size: 25px;
+}
+
+.p {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid gray;
+}
+
+#cross,
+#cross1 {
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    left: 90%;
+    cursor: pointer;
+}
+
+#cross:hover {
+    color: red;
+}
+
+#cross1:hover {
+    color: red;
+}
+
+#container2 {
+    z-index: 2;
+}
