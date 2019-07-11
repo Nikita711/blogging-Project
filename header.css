@@ -1,0 +1,61 @@
+/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
+the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap');
+.header h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+    color: royalblue;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.header span {
+    font-size: 52px;
+    letter-spacing: 3px;
+}
+
+.header p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    margin-top: -8px;
+    letter-spacing: 1.2px;
+}
+
+.header {
+    padding: 5px;
+}
+
+.button {
+    position: relative;
+    top: -80px;
+    left: 1150px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: blue;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+@media only screen and (max-width: 720px) {
+    .button {
+        left: 480px;
+    }
+}
+
+.postButtons input {
+    border: 1.5px solid white;
+    position: relative;
+    top: 150px;
+    left: 42%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: yellow;
+    font-weight: 700;
+    margin: 5px;
+    outline: none;
+    cursor: pointer;
+}
