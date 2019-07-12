@@ -31,13 +31,19 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 .button {
     position: relative;
     top: -80px;
-    left: 1350px;
+    left: 1150px;
     border: 2px solid black;
     padding: 10px;
     background-color: blue;
     font-size: 15px;
     cursor: pointer;
     color: white;
+}
+
+@media only screen and (max-width: 720px) {
+    .button {
+        left: 480px;
+    }
 }
 
 .postButtons input {
