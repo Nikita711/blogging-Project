@@ -36,3 +36,19 @@
     padding: 10px;
     border: 0px;
 }
+
+#addEventsNames {
+    border: 5px solid grey;
+}
+
+#itsheading,
+#itsname,
+#blogBody {
+    border: 0px;
+}
+
+p {
+    border: 8px solid grey;
+    margin: 0%;
+    padding: 15px;
+}
