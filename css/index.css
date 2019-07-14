@@ -15,7 +15,8 @@ body {
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
 
 #container1,
-#container2 {
+#container2,
+#container3 {
     display: none;
     font-family: 'Roboto Condensed', sans-serif;
     /* margin: -80px auto; */
@@ -28,6 +29,10 @@ body {
     top: 110px;
     left: 32%;
     border-radius: 5px;
+}
+
+#container1 {
+    z-index: 10;
 }
 
 label {
@@ -50,6 +55,11 @@ button {
     margin-bottom: 18px;
 }
 
+textarea {
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 98%;
+}
+
 button {
     background-color: rgba(0, 128, 0, 0.6);
     color: white;
@@ -67,7 +77,8 @@ button {
 }
 
 #cross,
-#cross1 {
+#cross1,
+#cross2 {
     font-size: 30px;
     position: absolute;
     top: 15px;
@@ -83,6 +94,19 @@ button {
     color: red;
 }
 
+#cross2:hover {
+    color: red;
+}
+
 #container2 {
     z-index: 2;
+}
+
+span.psw {
+    float: center;
+    padding-top: 16px;
+}
+
+#span {
+    margin-left: 140px;
 }
