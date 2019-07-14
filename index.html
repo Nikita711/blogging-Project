@@ -23,7 +23,7 @@
             <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
             <div class="text">
                 <h2><span>S</span>cri<span>BB</span>ler</h2>
-                <p>Explore,Imagine,Create</p>
+                <p>Explore, Imagine, Create</p>
             </div>
             <div class="btn">
                 <input type="button" value="Sign Up" class="button" onclick="document.getElementById('container1').style.display='block'" style="width:auto;">
@@ -36,8 +36,8 @@
 
             <!-- Insert code for All Posts & Create Post button here -->
 
-            <input type="button" value="All Post">
-            <input type="button" value="Create Post">
+            <a href="./html/bloglist.html"><input type="button" value="All Posts"></a>
+            <input type="button" value="Create Post" class="button1" onclick="document.getElementById('container3').style.display='block'" style="width:auto;color: #000;">
 
         </div>
     </div>
@@ -45,7 +45,7 @@
     <div>
         <!-- Insert code for Sign In modal here -->
         <div id="container1">
-            <p class="p">GET STARTED!</p>
+            <p class="p">Get Started!</p>
             <span id="cross" onclick="document.getElementById('container1').style.display='none'" style="width:auto;"><i class="fas fa-times"></i></span>
             <form action="">
                 <label>FULL NAME</label><br>
@@ -55,7 +55,7 @@
                 <label>PASSWORD</label><br>
                 <input type="password" name="" required placeholder="Enter PASSWORD"><br>
                 <label>CONFIRM PASSWORD</label><br>
-                <input type="password" name="" required placeholder="CONFIRM PASSWORD"><br>
+                <input type="password" name="" required placeholder="Confirm PASSWORD"><br>
                 <button>Sign Up</button>
             </form>
         </div>
@@ -66,7 +66,7 @@
     <div>
         <!-- Insert code for Sign Up modal here -->
         <div id="container2">
-            <p class="p">WELCOME BACK!</p>
+            <p class="p">Welcome Back!</p>
             <span id="cross1" onclick="document.getElementById('container2').style.display='none'" style="width:auto;"><i class="fas fa-times"></i></span>
             <form action="">
 
@@ -75,7 +75,8 @@
                 <label>PASSWORD</label><br>
                 <input type="password" name="" required placeholder="Enter PASSWORD"><br>
 
-                <button>Sign In</button>
+                <button>Sign In</button><br>
+                <span id="span">Not a member ?<a href="#" onclick="document.getElementById('container1').style.display='block'" style="width:auto;">Sign Up</a></span>
             </form>
         </div>
 
@@ -84,6 +85,22 @@
     <div>
 
         <!-- Insert code for Create Post modal here -->
+        <div id="container3">
+            <p class="p">Create Post</p>
+            <span id="cross2" onclick="document.getElementById('container3').style.display='none'" style="width:auto;"><i class="fas fa-times"></i></span>
+            <form action="">
+                <label>USERNAME</label><br>
+                <input type="email" name="" required placeholder="Enter Email"><br>
+                <label>PASSWORD</label><br>
+                <input type="password" name="" required placeholder="Enter password"><br>
+                <label>Title</label><br>
+                <input type="text" required placeholder="Enter your Title"><br>
+                <textarea rows="4" cols="50" placeholder="Enter your Text here.!!!"></textarea><br><br>
+                <button>Create Post</button>
+            </form>
+        </div>
+
+
 
     </div>
 
